@@ -45,22 +45,28 @@ export default function RootLayout({children}) {
                 <nav
                     className="flex flex-row float-right justify-end m-20px flex items-center justify-between gap-5 font-[Orbitron]">
                     <Link href="/">
-                        <div className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg">
+                        <div
+                            className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg transform transition-all hover:scale-108">
                             Home
                         </div>
                     </Link>
                     <Link href="/projects">
-                        <div className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg">
+                        <div
+                            className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg transform transition-all hover:scale-108">
                             Projects
                         </div>
                     </Link>
                     <Link href="/about-me">
-                        <div className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg">
+                        <div
+                            className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg transform transition-all hover:scale-108">
                             About Me
                         </div>
                     </Link>
                     <Link href="/contact">
-                        <div className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg">
+                        <div
+                            className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg transform transition-all hover:scale-108"
+
+                        >
                             Contact
                         </div>
                     </Link>
@@ -71,7 +77,16 @@ export default function RootLayout({children}) {
         <main className="bg-[#FFFFFF]">
             {children}
         </main>
-
+        <footer className="bg-red-200 text-black p-6 mt-auto font-[Geist]">
+            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <p className="text-sm">© 2025 Matteo Weber. All rights reserved.</p>
+                <div className="flex space-x-4 grid grid-cols-3 divide-x-2 divide-black-400">
+                    <Link href="/datenschutz" className="pr-3 hover:underline">Datenschutz</Link>
+                    <Link href="/impressum" className="hover:underline">Impressum</Link>
+                    <Link href="/contact" className="hover:underline">Contact</Link>
+                </div>
+            </div>
+        </footer>
         </body>
         </html>
     );
