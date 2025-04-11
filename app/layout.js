@@ -56,12 +56,6 @@ export default function RootLayout({children}) {
                             Projects
                         </div>
                     </Link>
-                    <Link href="/about-me">
-                        <div
-                            className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg transform transition-all hover:scale-108">
-                            About Me
-                        </div>
-                    </Link>
                     <Link href="/contact">
                         <div
                             className=" bg-[#e3a4a4] rounded-md place-content-center p-3 shadow-lg transform transition-all hover:scale-108"

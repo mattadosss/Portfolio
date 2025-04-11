@@ -28,6 +28,7 @@ export default function Projects() {
                             labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
                         <a href="#" className="hover:underline max-w-20 font-semibold">GitHub</a>
                     </div>
+
                 </div>
             </div>
 
