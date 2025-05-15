@@ -49,18 +49,8 @@ export default function Contact() {
 
                    <div className="p-8 md:w-1/2">
                         <form
-                            onSubmit={(e) => {
-                                 e.preventDefault();
-                                 const name = e.target.name.value;
-                                 const email = e.target.email.value;
-                                 const message = e.target.message.value;
-
-                                 const mailtoLink = `mailto:matteo.weber@stundent.ksh.ch?subject=Message from ${encodeURIComponent(
-                                     name
-                                 )}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(name)} (${encodeURIComponent(email)})`;
-
-                                 window.location.href = mailtoLink;
-                            }}
+                           action="https://formspree.io/f/xvgaddek"
+                           method="POST"
                             className="space-y-6"
                         >
                              <div>
