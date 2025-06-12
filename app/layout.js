@@ -37,10 +37,13 @@ export default function RootLayout({children}) {
         >
         <header
             className="bg-[#f5d4d4] w-full h-[91px] flex items-center px-4 shadow-md flex items-center justify-between gap-5 shadow-2xs">
-            <div
-                className="font-[Borel]  rounded-md w-[90px] h-[50px] relative sm p-1.5 ml-4 pl-3 leading-none pt-3 text-2xl ">
-                Matteo<br></br>Weber
-            </div>
+
+            <Link href="/">
+                <div
+                    className="font-[Borel]  rounded-md w-[90px] h-[50px] relative sm p-1.5 ml-4 pl-3 leading-none pt-3 text-2xl ">
+                    Matteo<br></br>Weber
+                </div>
+            </Link>
             <div className="flex items-center justify-between gap-5">
                 <nav
                     className="flex flex-row float-right justify-end m-20px flex items-center justify-between gap-5 font-[Orbitron]">
