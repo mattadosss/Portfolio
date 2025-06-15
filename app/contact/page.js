@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Contact() {
      return(
-         <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+         <div className="min-h-screen flex items-center justify-center p-6">
               <div className="max-w-5xl w-full bg-white rounded-2xl shadow-xl overflow-hidden md:flex">
                    <div className="bg-[#f5d4d4] text-gray-900 p-8 md:w-1/2">
                         <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
