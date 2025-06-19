@@ -45,12 +45,12 @@ export default function RootLayout({children}) {
         </main>
 
         <footer className="bg-red-200 text-black p-6 mt-auto font-[Geist]">
-            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-                <p className="text-sm">© 2025 Matteo Weber. All rights reserved.</p>
-                <div className="flex space-x-4 grid grid-cols-3 divide-x-2 divide-black-400">
-                    <Link href="/datenschutz" className="pr-3 hover:underline">Datenschutz</Link>
-                    <Link href="/impressum" className="hover:underline">Impressum</Link>
-                    <Link href="/contact" className="hover:underline">Contact</Link>
+            <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-center gap-4 md:gap-0">
+                <p className="text-sm text-center md:text-left">© 2025 Matteo Weber. All rights reserved.</p>
+                <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4 md:divide-x-2 md:divide-black-400">
+                    <Link href="/datenschutz" className="hover:underline md:pr-3 md:first:pl-0">Datenschutz</Link>
+                    <Link href="/impressum" className="hover:underline md:px-3">Impressum</Link>
+                    <Link href="/contact" className="hover:underline md:pl-3">Contact</Link>
                 </div>
             </div>
         </footer>
