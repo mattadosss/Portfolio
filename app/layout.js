@@ -48,9 +48,9 @@ export default function RootLayout({children}) {
             <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-center gap-4 md:gap-0">
                 <p className="text-sm text-center md:text-left">© 2025 Matteo Weber. All rights reserved.</p>
                 <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4 md:divide-x-2 md:divide-black-400">
-                    <Link href="/datenschutz" className="hover:underline md:pr-3 md:first:pl-0">Datenschutz</Link>
-                    <Link href="/impressum" className="hover:underline md:px-3">Impressum</Link>
-                    <Link href="/contact" className="hover:underline md:pl-3">Contact</Link>
+                    <Link href="/datenschutz" className="text-sm hover:underline md:pr-3 md:first:pl-0">Datenschutz</Link>
+                    <Link href="/impressum" className="text-sm hover:underline md:px-3">Impressum</Link>
+                    <Link href="/contact" className="text-sm hover:underline md:pl-3">Contact</Link>
                 </div>
             </div>
         </footer>
