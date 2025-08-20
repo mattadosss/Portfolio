@@ -24,11 +24,12 @@ export default function Home() {
             <h1 className="text-2xl md:text-3xl font-semibold font-[Orbitron] mb-4">Hello, I’m Matteo Weber</h1>
             <div className="flex flex-col md:flex-row items-center md:items-center mt-8 font-[Geist]">
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
-                    className="w-40 md:w-50 mb-6 md:mb-0 md:mr-20 self-center md:self-start"
+                    src="portrait.png"
+                    className="w-40 md:w-50 mb-6 md:mb-0 md:mr-20 self-center md:self-start rounded-2xl"
                 />
+
                 <p className="text-lg md:text-2xl max-w-full md:max-w-2xl text-center md:text-left">
-                    I study at the Informatikmittelschule at Kantonsschule Hottingen Zürich,
+                I study at the Informatikmittelschule at Kantonsschule Hottingen Zürich,
                     where I explore different areas of programming and technology. I enjoy
                     trying out a bit of everything — web, apps, and games — because each project
                     is a chance to learn something new. When I’m not coding, you’ll usually find
