@@ -11,7 +11,9 @@ export default function Projects() {
 			description: "Personal portfolio built with a focus on performance and responsive UI.",
 			image: "https://placehold.co/150x100",
 			tags: ["React", "TailwindCSS", "Next.js"],
-			codeUrl: "#"
+			codeUrl: "#",
+			liveUrl: "#",
+			haspreiview: 1
 		},
 		{
 			id: "api",
@@ -19,7 +21,9 @@ export default function Projects() {
 			description: "A Node.js API with CRUD endpoints and basic auth.",
 			image: "https://placehold.co/150x100",
 			tags: ["Node.js", "MongoDB"],
-			codeUrl: "#"
+			codeUrl: "#",
+			liveUrl: "#",
+			haspreiview: 0
 		},
 		{
 			id: "dashboard",
@@ -27,7 +31,9 @@ export default function Projects() {
 			description: "Dashboard built with Flask and MySQL storage.",
 			image: "https://placehold.co/150x100",
 			tags: ["Python", "Flask", "MySql"],
-			codeUrl: "#"
+			codeUrl: "#",
+			liveUrl: "#",
+			haspreiview: 1
 		},
 		{
 			id: "widgets",
@@ -35,7 +41,9 @@ export default function Projects() {
 			description: "Reusable components written in vanilla JavaScript.",
 			image: "https://placehold.co/150x100",
 			tags: ["JavaScript"],
-			codeUrl: "#"
+			codeUrl: "#",
+			liveUrl: "#",
+			haspreiview: 0
 		}
 	];
 
@@ -111,7 +119,21 @@ export default function Projects() {
 						{/* Description */}
 						<p className="px-6 text-sm sm:text-base text-gray-800 mb-4 mt-1">{project.description}</p>
 						{/* Code button */}
-						<div className="px-6 pb-6 flex flex-col sm:flex-row sm:justify-end">
+						<div className="px-6 pb-6 flex flex-col sm:flex-row sm:justify-end gap-3">
+							{project.haspreiview === 1 && project.liveUrl && (
+								<a
+									href={project.liveUrl}
+									className="inline-flex items-center gap-2 bg-[#1d4ed8] hover:bg-[#2563eb] text-white font-semibold px-3 py-1.5 rounded-lg shadow-sm transition-colors duration-200 text-sm sm:text-base w-full sm:w-auto justify-center"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="View live deployment"
+								>
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+										<path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3z" />
+									</svg>
+									Live
+								</a>
+							)}
 							<a
 								href={project.codeUrl}
 								className="inline-flex items-center gap-2 bg-[#60a5fa] hover:bg-[#93c5fd] text-black font-semibold px-3 py-1.5 rounded-lg shadow-sm transition-colors duration-200 text-sm sm:text-base w-full sm:w-auto justify-center sm:justify-end"
