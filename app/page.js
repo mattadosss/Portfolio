@@ -10,7 +10,7 @@ export default function Home() {
         { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
     ];
     return (
-        <div className="flex flex-col min-h-screen text-gray-800 font-geist px-4 sm:px-6 md:px-8 lg:px-40 py-8 md:py-12 lg:py-20">
+        <div className="fade-in flex flex-col min-h-screen text-gray-800 font-geist px-4 sm:px-6 md:px-8 lg:px-40 py-8 md:py-12 lg:py-20">
             <h1 className="text-2xl md:text-3xl font-semibold font-[Orbitron]">Hey there 👋!</h1>
             <div className="flex flex-col md:flex-row mt-8 md:mt-13 font-[Geist]">
                 <img src="https://placehold.co/30x40" className="w-40 md:w-50 mb-6 md:mb-0 md:mr-20 self-center md:self-start"/>
