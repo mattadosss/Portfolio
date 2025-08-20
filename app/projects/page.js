@@ -62,7 +62,7 @@ export default function Projects() {
 						onClick={clearTags}
 						className={`px-3 py-1.5 rounded-full border text-sm transition-colors ${
 							activeTag === null
-								? "bg-[#e3a4a4] text-black border-[#e3a4a4]"
+								? "bg-[#93c5fd] text-black border-[#93c5fd]"
 								: "bg-white text-gray-800 border-gray-300 hover:bg-gray-50"
 						}`}
 					>
@@ -74,7 +74,7 @@ export default function Projects() {
 							onClick={() => toggleTag(tag)}
 							className={`px-3 py-1.5 rounded-full border text-sm transition-colors ${
 								isTagActive(tag)
-									? "bg-[#e3a4a4] text-black border-[#e3a4a4]"
+									? "bg-[#93c5fd] text-black border-[#93c5fd]"
 									: "bg-white text-gray-800 border-gray-300 hover:bg-gray-50"
 							}`}
 						>
@@ -88,7 +88,7 @@ export default function Projects() {
 				{projects.filter(matchesFilter).map((project) => (
 					<div
 						key={project.id}
-						className="bg-[#f5d4d4] w-full max-w-4xl border border-[#e3a4a4] rounded-2xl shadow-lg p-0 sm:p-0 flex flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-2"
+						className="bg-[#dbeafe] w-full max-w-4xl border border-[#93c5fd] rounded-2xl shadow-lg p-0 sm:p-0 flex flex-col overflow-hidden transition-transform duration-300 hover:-translate-y-2"
 					>
 						{/* Title */}
 						<h2 className="text-lg sm:text-xl font-semibold font-[Orbitron] px-6 pt-6 pb-2 text-gray-900">{project.title}</h2>
@@ -97,7 +97,7 @@ export default function Projects() {
 							<img
 								src={project.image}
 								alt={project.title}
-								className="w-full sm:w-2/3 max-w-xs rounded-xl border-4 border-[#e3a4a4] shadow-md object-cover"
+								className="w-full sm:w-2/3 max-w-xs rounded-xl border-4 border-[#93c5fd] shadow-md object-cover"
 							/>
 						</div>
 						{/* Tech tags */}
@@ -114,7 +114,7 @@ export default function Projects() {
 						<div className="px-6 pb-6 flex flex-col sm:flex-row sm:justify-end">
 							<a
 								href={project.codeUrl}
-								className="inline-flex items-center gap-2 bg-[#e3a4a4] hover:bg-[#e3a4a4] text-black font-semibold px-3 py-1.5 rounded-lg shadow-sm transition-colors duration-200 text-sm sm:text-base w-full sm:w-auto justify-center sm:justify-end"
+								className="inline-flex items-center gap-2 bg-[#60a5fa] hover:bg-[#93c5fd] text-black font-semibold px-3 py-1.5 rounded-lg shadow-sm transition-colors duration-200 text-sm sm:text-base w-full sm:w-auto justify-center sm:justify-end"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="View code on GitHub"

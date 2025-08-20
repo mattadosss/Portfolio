@@ -45,7 +45,7 @@ export default function RootLayout({children}) {
             {children}
         </main>
 
-        <footer className="bg-[#f5d4d4] text-black mt-auto font-[Geist] border-t border-[#e3a4a4]">
+        <footer className="bg-[#dbeafe] text-black mt-auto font-[Geist] border-t border-[#93c5fd]">
             <div className="w-full px-4 py-8 grid grid-cols-1 md:grid-cols-3 items-center gap-6 md:gap-10 text-center">
                 <p className="text-sm text-center md:text-left md:justify-self-start">© {year} Matteo Weber. All rights reserved.</p>
 

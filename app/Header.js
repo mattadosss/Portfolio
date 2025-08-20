@@ -7,7 +7,7 @@ import {useState} from "react";
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     return (<div>
-            <header className="bg-[#f5d4d4] w-full h-[91px] flex items-center px-4 shadow-md justify-between">
+            <header className="bg-[#dbeafe] w-full h-[91px] flex items-center px-4 shadow-md justify-between">
                 <Link href="/">
                     <div
                         className="font-[Borel] rounded-md w-[90px] h-[50px] relative sm p-1.5 ml-4 pl-3 leading-none pt-3 text-2xl">
@@ -24,13 +24,13 @@ export default function Header() {
 
                 {/* Desktop nav */}
                 <nav className="hidden md:flex gap-5 font-[Orbitron]">
-                    <Link href="/" className="bg-[#e3a4a4] rounded-md p-3 shadow-lg hover:scale-110 transition">
+                    <Link href="/" className="bg-[#93c5fd] rounded-md p-3 shadow-lg hover:scale-110 transition">
                         Home
                     </Link>
-                    <Link href="/projects" className="bg-[#e3a4a4] rounded-md p-3 shadow-lg hover:scale-110 transition">
+                    <Link href="/projects" className="bg-[#93c5fd] rounded-md p-3 shadow-lg hover:scale-110 transition">
                         Projects
                     </Link>
-                    <Link href="/contact" className="bg-[#e3a4a4] rounded-md p-3 shadow-lg hover:scale-110 transition">
+                    <Link href="/contact" className="bg-[#93c5fd] rounded-md p-3 shadow-lg hover:scale-110 transition">
                         Contact
                     </Link>
                 </nav>
@@ -38,17 +38,17 @@ export default function Header() {
 
             {/* Mobile menu dropdown */}
             {isOpen && (
-                <div className="flex flex-col md:hidden bg-[#f5d4d4] px-4 py-2 gap-2 font-[Orbitron] shadow-md">
+                <div className="flex flex-col md:hidden bg-[#dbeafe] px-4 py-2 gap-2 font-[Orbitron] shadow-md">
                     <Link href="/" onClick={() => setIsOpen(false)}
-                          className="bg-[#e3a4a4] rounded-md p-3 shadow-md hover:scale-105 transition">
+                          className="bg-[#93c5fd] rounded-md p-3 shadow-md hover:scale-105 transition">
                         Home
                     </Link>
                     <Link href="/projects" onClick={() => setIsOpen(false)}
-                          className="bg-[#e3a4a4] rounded-md p-3 shadow-md hover:scale-105 transition">
+                          className="bg-[#93c5fd] rounded-md p-3 shadow-md hover:scale-105 transition">
                         Projects
                     </Link>
                     <Link href="/contact" onClick={() => setIsOpen(false)}
-                          className="bg-[#e3a4a4] rounded-md p-3 shadow-md hover:scale-105 transition">
+                          className="bg-[#93c5fd] rounded-md p-3 shadow-md hover:scale-105 transition">
                         Contact
                     </Link>
                 </div>
