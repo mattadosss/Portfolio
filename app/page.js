@@ -1,4 +1,14 @@
 export default function Home() {
+    const skills = [
+        { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" },
+        { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" },
+        { name: "Bash", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" },
+        { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+        { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+    ];
     return (
         <div className="flex flex-col min-h-screen text-gray-800 font-geist px-4 sm:px-6 md:px-8 lg:px-40 py-8 md:py-12 lg:py-20">
             <h1 className="text-2xl md:text-3xl font-semibold font-[Orbitron]">Hey there 👋!</h1>
@@ -18,75 +28,18 @@ export default function Home() {
             </div>
             <h3 className="text-xl md:text-2xl font-semibold mb-4 font-[Geist] mt-12 md:mt-20">My Skills</h3>
 
-            <div className="space-y-4 max-w-full md:mr-20">
-
-                <div>
-                    <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium text-gray-700">Python</span>
-                        <span className="text-sm text-gray-500">65%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-3">
-                        <div className="bg-[#3573a6] h-3 rounded-full w-[65%]"></div>
-                    </div>
+            <div className="max-w-full md:mr-20">
+                <div className="flex flex-wrap gap-4">
+                    {skills.map((skill) => (
+                        <span
+                            key={skill.name}
+                            className="inline-flex items-center gap-3 bg-white text-lg text-gray-900 px-5 py-3 rounded-2xl border border-gray-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 font-medium"
+                        >
+                            <img src={skill.icon} alt={`${skill.name} logo`} className="h-7 w-7" />
+                            {skill.name}
+                        </span>
+                    ))}
                 </div>
-
-
-                <div>
-                    <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium text-gray-700">JavaScript</span>
-                        <span className="text-sm text-gray-500">40%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-3">
-                        <div className="bg-[#f1e15a] h-3 rounded-full w-[40%]"></div>
-                    </div>
-                </div>
-
-
-                <div>
-                    <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium text-gray-700">HTML</span>
-                        <span className="text-sm text-gray-500">90%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-3">
-                        <div className="bg-[#e44c27] h-3 rounded-full w-[90%]"></div>
-                    </div>
-                </div>
-
-
-                <div>
-                    <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium text-gray-700">CSS</span>
-                        <span className="text-sm text-gray-500">60%</span>
-                    </div>
-
-                    <div className="w-full bg-gray-200 rounded-full h-2.5">
-                        <div className="bg-[#68309e] h-2.5 rounded-full w-[60%]"></div>
-                    </div>
-
-                </div>
-                <div>
-                    <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium text-gray-700">Bash</span>
-                        <span className="text-sm text-gray-500">45%</span>
-                    </div>
-
-                    <div className="w-full bg-gray-200 rounded-full h-2.5 ">
-                        <div className="bg-[#c1f02e] h-2.5 rounded-full w-[45%]"></div>
-                    </div>
-
-                </div>
-                <div>
-                    <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium text-gray-700">SQL</span>
-                        <span className="text-sm text-gray-500">85%</span>
-                    </div>
-
-                    <div className="w-full bg-gray-200 rounded-full h-2.5">
-                        <div className="bg-[#e38c00] h-2.5 rounded-full w-[85%]"></div>
-                    </div>
-
-                </div>
-
             </div>
 
 
