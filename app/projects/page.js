@@ -9,41 +9,61 @@ export default function Projects() {
 			id: "portfolio",
 			title: "Portfolio Website",
 			description: "Personal portfolio built with a focus on performance and responsive UI.",
-			image: "https://placehold.co/150x100",
-			tags: ["React", "TailwindCSS", "Next.js"],
-			codeUrl: "#",
-			liveUrl: "#",
-			haspreiview: 1
-		},
-		{
-			id: "api",
-			title: "REST API",
-			description: "A Node.js API with CRUD endpoints and basic auth.",
-			image: "https://placehold.co/150x100",
-			tags: ["Node.js", "MongoDB"],
-			codeUrl: "#",
+			image: "/projects/portfolio.png",
+			tags: ["Next.js", "TailwindCSS", "Next.js"],
+			codeUrl: "https://github.com/mattadosss/Portfolio",
 			liveUrl: "#",
 			haspreiview: 0
 		},
 		{
-			id: "dashboard",
-			title: "Analytics Dashboard",
-			description: "Dashboard built with Flask and MySQL storage.",
-			image: "https://placehold.co/150x100",
-			tags: ["Python", "Flask", "MySql"],
-			codeUrl: "#",
-			liveUrl: "#",
+			id: "music-player",
+			title: "Music Player",
+			description: "Music player built with React and TailwindCSS.",
+			image: "/projects/music-player.png",
+			tags: ["Node.js", "React", "TailwindCSS", "JavaScript", "Group-Project"],
+			codeUrl: "https://github.com/mattadosss/Music-Player",
+			liveUrl: "https://music-player-inky.vercel.app/",
 			haspreiview: 1
 		},
 		{
-			id: "widgets",
-			title: "UI Widgets",
-			description: "Reusable components written in vanilla JavaScript.",
-			image: "https://placehold.co/150x100",
-			tags: ["JavaScript"],
-			codeUrl: "#",
+			id: "asteroid",
+			title: "Asteroid Shooter",
+			description: "Asteroid shooter game built with Python and Pygame.",
+			image: "https://raw.githubusercontent.com/mattadosss/AstroidGame/main/screenshots/menu.png",
+			tags: ["Python", "Pygame"],
+			codeUrl: "https://github.com/mattadosss/AstroidGame",
 			liveUrl: "#",
 			haspreiview: 0
+		},
+		{
+			id: "taskplanner",
+			title: "Task Planner",
+			description: "Task planner built with Flask, Python, MySQL, JavaScript and HTML/CSS.",
+			image: "/projects/taskplanner.png",
+			tags: ["Python", "Flask", "MySQL", "JavaScript", "HTML/CSS"],
+			codeUrl: "https://github.com/mattadosss/TaskPlanner",
+			liveUrl: "#",
+			haspreiview: 0
+		},
+        {
+			id: "kleinprojecte",
+			title: "Kleinprojekte",
+			description: "Kleinprojekte is a collection of small, self-contained projects in Python.",
+			image: "/projects/kleinprojekte.png",
+			tags: ["Python"],
+			codeUrl: "https://github.com/mattadosss/Kleinprojekte",
+			liveUrl: "#",
+			haspreiview: 0
+		},
+        {
+			id: "mensaapp",
+			title: "Mensa App",
+			description: "A simple, agile-driven mensa (cafeteria) application built with Next.js (frontend) and Supabase (database/auth). ",
+			image: "/projects/mensaapp.png",
+			tags: ["TypeScript", "Next.js", "SupaBase", "PgSQL", "TailwindCSS", "Group-Project"],
+			codeUrl: "https://github.com/mattadosss/M462_Mensaapp",
+			liveUrl: "https://m462-mensaapp-8s17.vercel.app",
+			haspreiview: 1
 		}
 	];
 
@@ -110,8 +130,8 @@ export default function Projects() {
 						</div>
 						{/* Tech tags */}
 						<div className="flex flex-wrap gap-2 px-6 mt-4 mb-2">
-							{project.tags.map((tech) => (
-								<span key={tech} className="bg-white/80 text-xs sm:text-sm text-gray-800 px-2 py-1 rounded-full border border-gray-300 font-medium">
+							{Array.from(new Set(project.tags)).map((tech) => (
+								<span key={`${project.id}-${tech}`} className="bg-white/80 text-xs sm:text-sm text-gray-800 px-2 py-1 rounded-full border border-gray-300 font-medium">
 									{tech}
 								</span>
 							))}
