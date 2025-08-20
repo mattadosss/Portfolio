@@ -20,7 +20,7 @@ export default function Projects() {
 			title: "Music Player",
 			description: "Music player built with React and TailwindCSS.",
 			image: "/projects/music-player.png",
-			tags: ["Node.js", "React", "TailwindCSS", "JavaScript", "Group-Project"],
+			tags: ["Node.js", "React", "TailwindCSS", "JavaScript", "Group-Project", "HasPreview"],
 			codeUrl: "https://github.com/mattadosss/Music-Player",
 			liveUrl: "https://music-player-inky.vercel.app/",
 			haspreiview: 1
@@ -60,7 +60,7 @@ export default function Projects() {
 			title: "Mensa App",
 			description: "A simple, agile-driven mensa (cafeteria) application built with Next.js (frontend) and Supabase (database/auth). ",
 			image: "/projects/mensaapp.png",
-			tags: ["TypeScript", "Next.js", "SupaBase", "PgSQL", "TailwindCSS", "Group-Project"],
+			tags: ["TypeScript", "Next.js", "SupaBase", "PgSQL", "TailwindCSS", "Group-Project", "HasPreview"],
 			codeUrl: "https://github.com/mattadosss/M462_Mensaapp",
 			liveUrl: "https://m462-mensaapp-8s17.vercel.app",
 			haspreiview: 1

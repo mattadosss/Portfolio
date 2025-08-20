@@ -21,21 +21,22 @@ export default function Home() {
     ];
     return (
         <div className="fade-in flex flex-col min-h-screen text-gray-800 font-geist px-4 sm:px-6 md:px-8 lg:px-40 py-8 md:py-12 lg:py-20">
-            <h1 className="text-2xl md:text-3xl font-semibold font-[Orbitron]">Hey there 👋!</h1>
-            <div className="flex flex-col md:flex-row mt-8 md:mt-13 font-[Geist]">
-                <img src="https://placehold.co/30x40" className="w-40 md:w-50 mb-6 md:mb-0 md:mr-20 self-center md:self-start"/>
-                <p className="text-lg md:text-2xl mt-4 md:mt-25 max-w-full md:max-w-200">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-            </div>
-            <div className="flex flex-col md:flex-row mt-12 md:mt-23 font-[Geist]">
-                <p className="text-lg md:text-2xl md:mr-20 mt-4 md:mt-20 max-w-full md:max-w-200 order-2 md:order-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam
-                    nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+            <h1 className="text-2xl md:text-3xl font-semibold font-[Orbitron] mb-4">Hello, I’m Matteo Weber</h1>
+            <div className="flex flex-col md:flex-row items-center md:items-center mt-8 font-[Geist]">
                 <img
-                    src="https://placehold.co/60x50" className="w-40 md:w-70 mb-6 md:mb-0 md:mr-20 self-center md:self-start order-1 md:order-2"/>
-            </div>
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+                    className="w-40 md:w-50 mb-6 md:mb-0 md:mr-20 self-center md:self-start"
+                />
+                <p className="text-lg md:text-2xl max-w-full md:max-w-2xl text-center md:text-left">
+                    I study at the Informatikmittelschule at Kantonsschule Hottingen Zürich,
+                    where I explore different areas of programming and technology. I enjoy
+                    trying out a bit of everything — web, apps, and games — because each project
+                    is a chance to learn something new. When I’m not coding, you’ll usually find
+                    me playing sports or spending time outside.
+                </p>
+                </div>
+
+            
             <h3 className="text-xl md:text-2xl font-semibold mb-4 font-[Geist] mt-12 md:mt-20">My Skills</h3>
 
             <div className="max-w-full md:mr-20">
