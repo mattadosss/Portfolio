@@ -4,7 +4,8 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <div className="min-h-screen flex items-center justify-center p-4 sm:p-8 bg-gradient-to-br from-[#ffffff]/60 via-white to-[#e3a4a4]/40">
+        <div className="fade-in min-h-screen flex items-center justify-center p-4 sm:p-8 bg-gradient-to-br from-[#ffffff]/60 via-white to-[#e3a4a4]/40">
+            <h1 className="font-[Orbitron] text-2xl sm:text-3xl mb-6 text-center">Contact</h1>
             <div className="max-w-5xl w-full flex flex-col md:flex-row gap-8">
                 {/* Contact Info Card */}
                 <div className="flex-1 bg-white rounded-2xl shadow-xl border border-[#f5d4d4] flex flex-col overflow-hidden">
