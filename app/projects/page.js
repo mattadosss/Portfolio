@@ -64,6 +64,16 @@ export default function Projects() {
 			codeUrl: "https://github.com/mattadosss/M462_Mensaapp",
 			liveUrl: "https://m462-mensaapp-8s17.vercel.app",
 			haspreiview: 1
+		},
+		{
+			id: "scholary",
+			title: "Scholary",
+			description: "An intelligent study planning application that automatically generates optimal study schedules for your exams. This project was created for the KSH Hackathon.",
+			image: "/projects/scholary.png",
+			tags: ["JavaScript", "Next.js", "SupaBase", "PgSQL", "TailwindCSS", "Group-Project", "HasPreview"],
+			codeUrl: "https://github.com/mattadosss/ksh_hackathon",
+			liveUrl: "https://kshhackathon-ten.vercel.app/",
+			haspreiview: 1
 		}
 	];
 
